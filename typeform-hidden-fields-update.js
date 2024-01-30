@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+window.document.addEventListener("DOMContentLoaded", function() {
        const gclid = "gclid";
        const gClientId = "test_ga_client_id";
        const gMedium = "test_ga_medium";
@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
        const typeform = document.getElementById("js-typeform-update");
        typeform.removeAttribute("data-tf-hidden");
-       console.log(document.cookie)
+       console.log(window.document.cookie)
        typeform.setAttribute("data-tf-hidden", cookieString);
 });
