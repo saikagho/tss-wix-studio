@@ -8,6 +8,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
        const typeform = document.getElementById("js-typeform-update");
        typeform.removeAttribute("data-tf-hidden");
-       console.log(typeform.getAttribute("data-tf-hidden"), cookieString)
+       console.log(document.cookie)
        typeform.setAttribute("data-tf-hidden", cookieString);
 });
